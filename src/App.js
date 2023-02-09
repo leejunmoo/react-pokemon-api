@@ -1,13 +1,12 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import Pokemon from './components/Pokemon';
 // import bulbasaur from './components/Pokemon';
 
 function App() {
   // 포켓몬 api
   const pokemon_API = 'https://pokeapi.co/api/v2/pokemon/pikachu';
+  const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon/pikachu');
   /* 버튼누를때마다 url 바뀌면서 정보 리로드 */
-  const [url, setUrl] = useState('');
   let pikachu = () => {
     setUrl('https://pokeapi.co/api/v2/pokemon/pikachu')
     
@@ -16,6 +15,7 @@ function App() {
   let bulbasaur = () => {
     setUrl('https://pokeapi.co/api/v2/pokemon/bulbasaur')
     
+    console.log(url)
   } 
 
   let charmander = () => {
@@ -34,7 +34,7 @@ function App() {
     .then(data => {
       const p = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
       const b = data.types[0].type.name
-      console.log(url)
+      // console.log(url)
       
       setPokemon(data)
     })
@@ -47,15 +47,14 @@ function App() {
 
   useEffect(() => {
    pokemonData();
-   pikachu();
-  }, []);
+  });
 
 
   /* 능력 map 함수 */
   const list = pokemons.abilities;
 
   return (
-    <div class="frame">
+    <div className="frame">
       <div id="encyclopedia"></div>
       <div id="ellipse_1"></div>
       <div id="ellipse_2"></div>
@@ -73,10 +72,10 @@ function App() {
             
           </div>
       </div>
-      <button id="pikachu" onclick={pikachu}>피카츄</button>
-      <button id="bulbasaur" onclick={bulbasaur}>이상해씨</button>
-      <button id="charmander" onclick={charmander}>파이리</button>
-      <button id="squirtle" onclick={squirtle}>꼬부기</button>
+      <button id="pikachu" onClick={pikachu}>피카츄</button>
+      <button id="bulbasaur" onClick={bulbasaur}>이상해씨</button>
+      <button id="charmander" onClick={charmander}>파이리</button>
+      <button id="squirtle" onClick={squirtle}>꼬부기</button>
       
       <div id="description">
       <p id="pokemon">{pokemons.name}</p>
