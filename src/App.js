@@ -9,13 +9,10 @@ function App() {
   /* 버튼누를때마다 url 바뀌면서 정보 리로드 */
   let pikachu = () => {
     setUrl('https://pokeapi.co/api/v2/pokemon/pikachu')
-    
   }
 
   let bulbasaur = () => {
     setUrl('https://pokeapi.co/api/v2/pokemon/bulbasaur')
-    
-    console.log(url)
   } 
 
   let charmander = () => {
@@ -60,10 +57,6 @@ function App() {
       <div id="ellipse_2"></div>
       <div id="ellipse_3"></div>
       <div id="ellipse_4"></div>
-      <div id="line_1"></div>
-      <div id="line_2"></div>
-      <div id="line_3"></div>
-      
       <div id="look">
           <div id="gif">
             {

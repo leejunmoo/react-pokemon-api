@@ -2,25 +2,24 @@
 #encyclopedia {
   position: absolute;
   /* max-width: 500px; */
-  width: 300px;
-  height: 450px;
-  left: 10px;
-  top: 10px;
+  width: 100vw;
+  height: 100%;
+  margin: 10px;
   border-radius: 5px;
   background: #DC0A2D;
   background-image: url() 
 }
 
 #gif img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 #ellipse_1 {
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 30px;
+  left: 5%;
   top: 30px;
   border-radius: 50%;
   border: 4px solid #dedede;
@@ -32,7 +31,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  left: 100px;
+  left: 20%;
   top: 30px;
   border-radius: 50%;
   border: 2px solid black;
@@ -44,7 +43,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  left: 120px;
+  left: 26%;
   top: 30px;
   border-radius: 50%;
   border: 2px solid black;
@@ -56,7 +55,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  left: 140px;
+  left: 32%;
   top: 30px;
   border-radius: 50%;
   border: 2px solid black;
@@ -64,7 +63,7 @@
   background: #4DA361;
 }
 
-#line_1 {
+/* #line_1 {
   position: absolute;
   width: 90px;
   height: 1px;
@@ -93,22 +92,22 @@
 
   background-color: #000000;
   transform: rotate(-9.46deg);
-}
+} */
 
 #look {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 110px;
-  top: 117px;
-
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #232323;
 }
 
 #gif {
   width: 80px;
   height: 80px;
-  margin: 20px 15px 20px 25px;
+  margin: 50px 55px 60px 55px;
 }
 
 button {
@@ -122,9 +121,9 @@ button {
   position: absolute;
   width: 100px;
   height: 35px;
-  left: 50px;
-  top: 230px;
-
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
   background: #DEDEDE;
 }
 
@@ -132,9 +131,9 @@ button {
   position: absolute;
   width: 100px;
   height: 35px;
-  left: 170px;
-  top: 230px;
-
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
   background: #DEDEDE;
 }
 
@@ -142,9 +141,9 @@ button {
   position: absolute;
   width: 100px;
   height: 35px;
-  left: 50px;
-  top: 275px;
-
+  top: 57%;
+  left: 35%;
+  transform: translate(-50%, -50%);
   background: #DEDEDE;
 }
 
@@ -152,22 +151,21 @@ button {
   position: absolute;
   width: 100px;
   height: 35px;
-  left: 170px;
-  top: 275px;
-
+  top: 57%;
+  left: 65%;
+  transform: translate(-50%, -50%);
   background: #DEDEDE;
 }
 
 #description {
   position: absolute;
   width: 200px;
-  height: 100px;
-  left: 60px;
-  top: 320px;
-
+  height: 150px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #51AE5E;
   overflow-y: scroll;
-
   text-align: center;
 }
 
